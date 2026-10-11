@@ -35,7 +35,8 @@ resource "docker_container" "nginx" {
     internal = 80
     external = 9090
   }
-}```  
+}
+```
 Кроме ошибок в ответе 4 была исправлена строка с неверным именем переменной.example_${random_password.random_string_FAKE.resulT}
 ![docker_ps]()  
 6. Замените имя docker-контейнера в блоке кода на ```hello_world```. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду ```terraform apply -auto-approve```.
